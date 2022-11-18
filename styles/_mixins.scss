@@ -1,0 +1,9 @@
+@mixin containerInput {
+	width: 45%;
+	text-align: center;
+	color: $second-color;
+	font-size: 25px;
+	padding: 10px;
+	border-radius: 30px;
+	border: 2px solid $shadow-color;
+}

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DynaPuff:wght@400;700&family=Inter:wght@300;500&family=Open+Sans&family=Oswald:wght@300;500;700&family=Raleway:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap");
+@-webkit-keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
+  font-family: "Roboto Mono";
+  color: #fff;
+}
+
+img {
+  width: 80%;
+}
+
+main {
+  padding: 10px;
+  max-width: 730px;
+  height: 700px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .section1 {
+  padding: 0 10px 10px 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+main .section1 h1 {
+  text-align: center;
+}
+main .section1 button {
+  height: 85px;
+  width: 85px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+main .section1 button:hover {
+  cursor: pointer;
+}
+main .section2 {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+main .section2 .estadisticas {
+  border: 1px solid #fff;
+  height: 70px;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.9;
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.invisible {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .section1 button {
+    height: 120px;
+    width: 120px;
+    font-size: 40px;
+  }
+  main .section2 {
+    width: 500px;
+    padding: 20px;
+  }
+  main .section2 .estadisticas {
+    height: 105px;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    margin: 30px auto;
+    flex-direction: row;
+    height: auto;
+  }
+  main .section1 button {
+    height: 120px;
+    width: 120px;
+    font-size: 40px;
+  }
+  main .section2 {
+    width: 250px;
+    height: auto;
+    padding: 20px;
+  }
+  main .section2 .estadisticas {
+    border: 1px solid #fff;
+    height: 105px;
+    padding: 8px 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
